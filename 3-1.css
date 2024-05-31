@@ -1,0 +1,210 @@
+/*body::-webkit-scrollbar {
+    display: none;
+}*/
+.container {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    /*width: 100vw;*/
+}
+#a {
+    display: none;
+    /*height: 100px;*/
+    width:1536px;
+    background-color: #B5C0D0;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+.dog1{
+    margin-top: 140px;
+    margin-left: 250px;
+    z-index: 15;    
+}
+.animal{
+    border-radius: 5% 5% 5% 5%;
+}
+#card1{
+    height: 450px;
+    width:800px;
+    z-index: 5;
+    border: 5px solid #EEEEEE;
+    border-radius: 5% 5% 5% 5%;
+    background-color: #F9F9F9;
+    margin-left:30%;
+    margin-top: -28%;
+}
+.login-all{
+    /*transform: scale(0);
+    transition: transform .5s ease;*/
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.wrapper1 {
+    display: none;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    
+}
+.wrapper1{
+    position: relative;
+    top: 20px;
+    left: 400px;
+}
+
+.login-all.active-popup {
+    /*transform: scale(1);
+    transition: transform .5s ease;*/
+    opacity: 1;
+    transform: scale(1);
+}
+.wrapper1 .from-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper1.active .from-box_login {
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper1 .from-box_login {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.wrapper1 .from-box.forgot {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper1.active .from-box.forgot {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.wrapper1 .from-box.password {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper1.active .from-box.password {
+    transition: transform 0.18s ease;
+}
+.from-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+.remember-forgot {
+    font-size: 0.9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content:space-between; 
+}
+
+.remember-forgot label input {
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.btnlogin {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.btnlogin1 {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    position: relative;
+    top:-4px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.or1{
+    position: relative;
+    top: 6px;
+    left: 140px;
+}
+.gsi-material-button{
+    position: relative;
+    top: 13px;
+}

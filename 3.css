@@ -1,0 +1,210 @@
+html, body, div,header,
+h1,p
+a,img,
+small, ul,li,
+article,
+nav{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html,body{
+	overflow: hidden;
+}
+/* HTML5 display-role reset for older browsers */
+article,nav,header {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #fff;
+}
+ ul {
+	list-style: none;
+}
+body{
+    margin :0;
+    font-family:sans-serif;
+    line-height: 1;
+}
+.container{
+    height:100vh;
+    overflow-x: hidden;
+    perspective: 20px;
+   
+    /* /-----/ */
+}
+/********hr************/
+hr {
+	margin: 0;
+	border: none;
+	border-top: 1px solid #3b3b3b;
+	border-bottom: 1px solid #3b3b3b;
+	height: 3px;
+}
+
+/************************nav*******************************/
+nav#primary {
+	z-index: 5;
+	position: fixed;
+	top: 50%;
+	right: 16px;
+	margin-top: -40px;
+}
+nav#primary li {
+	position: relative;
+	height: 20px;
+	left: -200px;
+}
+nav#primary a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	background: transparent url('img/nav-dot.png') 4px 4px no-repeat;
+}
+nav#primary a:hover, nav#primary a.active {
+	background: transparent url('img/nav-dot.png') 4px -16px no-repeat;
+}
+nav#primary h1 {
+	position: absolute;
+	right: 22px;
+	top: -7px;
+	display: none;
+	padding: 4px 20px 4px 7px;
+	color: #fff;
+	white-space: nowrap;
+	background: transparent url('img/nav-arrow.png') 100% 50% no-repeat;
+	}
+
+nav.next-prev {
+	margin: 20px 0 0 0;
+    /*position: relative;
+    left: 120px;
+    top: 150px;*/
+	}
+	a.prev,
+	a.next {
+		display: block;
+		width: 15px;
+		height: 11px;
+		text-indent: -9999px;
+		}
+	a.prev {
+		margin: 0 auto 5px auto;
+		background: transparent url('img/scroll-arrow-up.png') 0 0 no-repeat;
+		}
+		a.prev:hover {
+			background: transparent url('img/scroll-arrow-up.png') 0 -11px no-repeat;
+			}
+	a.next {
+		margin: 5px auto 0 auto;
+		background: transparent url('img/scroll-arrow-down.png') -1px 0 no-repeat;
+		}
+		a.next:hover {
+			background: transparent url('img/scroll-arrow-down.png') -1px -11px no-repeat;
+			}
+.content{
+    z-index: 4;
+	position: relative;
+	max-width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+	line-height: 1.7;
+	}
+	#content article {
+		width: 300px;
+		}
+		#manned-flight ,
+		#frameless-parachute,
+		#english-channel,
+		#about {
+			padding-top: 105px;
+			left: 50px;
+			}
+		#manned-flight {
+			position: absolute;
+			top: 0px;
+			left: -10px;
+			top: 0px;
+			}
+		#frameless-parachute {
+			position: absolute;
+			top: 714px;
+			}
+		#english-channel {
+			position: absolute;
+			top: 1540px;
+			}
+			#content h2 {
+				font-family: 'arial-black';
+    			font-size: 30px;
+    			text-transform: uppercase;
+				}
+			#content p {
+				line-height: 1.7;
+				margin: 1rem 0 1.5rem;
+				font-size: 1rem;
+				font-weight: 700;
+				}
+		#about {
+			position: absolute;
+			top: 2800px;
+			}
+
+.c1{
+	position: relative;
+	left: 0px;
+}
+.test{
+	width: min(30vw,500px);
+	position: relative;
+	z-index: 5;
+	top: -95px;
+	left: 350px;
+}
+.c2{
+    width: min(30vw,500px);
+    position: relative;
+    top: 120px;
+    left: 20px;
+}
+.c3{
+    width: min(30vw,500px);
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+.c4{
+    width: min(30vw,500px);
+    position: relative;
+    top: -450px;
+    left: 500px;
+}
+.drink{
+    position: absolute;
+    left: 719px;
+    bottom: -500px;
+    display: block;
+    -webkit-mask-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 150%);
+    mask-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%);
+}
+.fall{
+    position: absolute;
+    left: 719px;
+    bottom: -520px;
+    display: block;
+    -webkit-mask-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 150%);
+    mask-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%);
+}
+.monitor{
+    position: absolute;
+    left:-50px;
+    bottom: 0px;
+    display: block;
+    -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 100%);
+    mask-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 50%);
+}

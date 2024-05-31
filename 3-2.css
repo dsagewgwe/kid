@@ -1,0 +1,147 @@
+/*body::-webkit-scrollbar {
+    display: none;
+}*/
+.container {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    /*width: 100vw;*/
+}
+#b {
+    display: none;
+    /*height:1500px;*/
+    width:1536px;
+    background-color: #B5C0D0;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+.cat1{
+    margin-top: 140px;
+    margin-left: 250px;
+    z-index: 15;
+}
+.animal{
+    border-radius: 5% 5% 5% 5%;
+}
+#card2{
+    height:460px;
+    width:800px;
+    z-index: 5;
+    border: 5px solid #EEEEEE;
+    border-radius: 5% 5% 5% 5%;
+    background-color: #F9F9F9;
+    margin-left:30%;
+    margin-top: -28%;
+}
+.register-all{
+    transform: scale(0);
+    transition: transform .5s ease;
+}
+.wrapper2 {
+    display: none;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+.wrapper2{
+    position: relative;
+    top: -6px;
+    left: 400px;
+}
+
+.register-all.active-popup {
+    transform: scale(1);
+}
+.wrapper2 .from-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper2.active .from-box_register {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper2.from-box_register {
+    transform: translateX(0);
+}
+.from-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    top: -20px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+.btnLogin2 {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    top:-30px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.or{
+    position: relative;
+    top:-25px;
+    left: 140px;
+}
+.google2{
+    position: relative;
+    top: -30px;
+}

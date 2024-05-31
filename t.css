@@ -1,0 +1,67 @@
+#canvas {
+    width: 500%;
+    max-width: 740px;
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 30%;
+}
+#sidebarWrapper {
+    position: fixed;
+    top: 150px;
+    left: 80px;
+    width: 230px;
+    height: 500px;
+    background-color: #B4B4B8; /* 修改为黄色背景 */
+    overflow: hidden;
+    box-shadow: 0 20px 22px rgb(0, 0, 0); /* 添加轻微阴影效果 */
+    transition: height 0.3s ease; /* 添加高度变化的过渡效果 */
+    border-radius: 10px; /* 添加圆角 */
+}
+#sidebarContent {
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+}
+#historyList {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+    overflow-y: auto;
+    max-height: calc(500px - 100px); /* 設置歷史紀錄列表的最大高度 */
+}
+#toggleSidebarButton, #clearHistoryButton {
+    position: absolute;
+    top: 10px;
+    left: 15px; /* 调整切换按钮的位置 */
+    padding: 8px 12px; /* 调整按钮的内边距 */
+    background-color: #ffdf85; /* 修改为浅黄色背景 */
+    border: none; /* 移除边框 */
+    border-radius: 5px; /* 添加圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加轻微阴影效果 */
+    /*font-size: 14px; 
+    font-weight: bold;*/
+    font-size: 1rem;
+	font-weight: 700;
+    color: #000; /* 设置文字颜色 */
+    cursor: pointer; /* 添加指针样式 */
+    transition: background-color 0.3s ease; /* 添加背景色变化的过渡效果 */
+}
+#toggleSidebarButton:hover, #clearHistoryButton:hover {
+    background-color: #ffd966; /* 悬停时修改背景色 */
+}
+#clearHistoryButton {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 100px; /* 將清除歷史紀錄按鈕向右移动到離側邊欄左側 150px 的位置 */
+    display: inline-block; /* 設置按鈕顯示方式為橫向排列 */
+    z-index: 5px;
+}
+.s{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    left: 1350px;
+    top: 10px;
+}

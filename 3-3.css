@@ -1,0 +1,13 @@
+.container {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+#c {
+    display: none;
+    /*height:1500px;*/
+    width:1536px;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}

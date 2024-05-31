@@ -1,0 +1,72 @@
+  .card1{
+    /*box-model*/
+    height: 200px;
+    width:200px;
+    position: relative;
+    left: -60px;
+    top: 270px;
+    cursor: pointer;
+  }
+  .a-card-container {
+    /*box-model*/
+    height:100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .front1, .back1{
+    /*display*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*box-model*/
+    height:100%;
+    width:100%;
+    border-radius: 10px;
+  }
+  .front1{
+    /*style*/
+    background-color: #9BCDD2;
+    color: #dddddd;
+  }
+  
+  .back1{
+    /*style*/
+    background-color: #FF8551;
+    color: #222831;
+		font-size: 1rem;
+		font-weight: 700;
+  }
+  
+  
+  /*for flip card*/
+  .card1{
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  .a-card-container{
+    /*position*/
+    position: relative;
+    /*flip card*/
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  /*.card:hover .flip1-card-container{
+    transform: rotateY(180deg);
+  }*/
+  .a-card{
+    transform: rotateY(180deg);
+  }  
+  .front1{
+    /*Position*/
+    position: absolute;
+    /*Flip Card*/
+    backface-visibility: hidden;
+  }
+  
+  .back1{
+    /*Position*/
+    position: absolute;
+    /*Flip Card*/
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <title>Document</title>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+}
+.full-landing-image{
+    width: 100%;
+    height: 100vh;
+    background: url(img/2.png) no-repeat center;
+    background-size: cover;
+    
+}
+/*#content1 {  
+    width: min(40vw,500px);
+    position: absolute;
+    z-index: 30;
+    top: 25%;
+    left: 7rem;
+    font: 400 0.85rem helvetica, sans-serif;
+    color: black;
+    opacity: 0;
+  display: none;
+}
+
+.title1 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.description1 {
+    line-height: 1.7;
+    margin: 1rem 0 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}*/
+
+    </style>
+</head>
+<body>
+    <div class="full-landing-image" style="position: absolute;
+    z-index: -1;"></div>
+
+    <!--<div id="content1"> 
+        <h2 class='title1'>設計理念</h2>
+    <p class='description1'>利用此裝置滿足寵物飲水需求。透過"寵物飲水機"的設置，滿足寵物的飲水需求。此裝置具備補水功能，當水源不足時能夠即時提供補充，並透過內部過濾設計確保水源清潔衛生，讓寵物隨時有乾淨的水可飲用。尤其對於經常外出或加班無法及時掌握寵物飲水狀況的主人來說，這樣的裝置非常實用，能確保寵物始終擁有充足又清潔的水源。<br>提供即時監測數據讓飼主了解寵物是否在玩水。透過即時監測數據的提供，讓飼主隨時了解寵物是否在喝水。這種功能不僅能夠讓忙碌的飼主隨時關心寵物的健康，也能增進飼主與寵物之間的情感連結。透過介面的開發，我們能即時回傳數據，使飼主即使在外出時也能掌握寵物的飲水情況。</p>
+    </div>-->
+    <script>
+        /*水波紋*/
+        $(".full-landing-image").ripples({
+            resolution:1000, /*控制水波紋的擾動強度*/
+            perturbance:0.000000001, /*設置波紋的擾動程度*/
+        });
+    </script>
+</body>
+</html>
